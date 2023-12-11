@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Chat</title>
+    <link rel="icon" type="image/x-icon" href="">
+    <link rel="stylesheet" href="/css/style.css">
+    <link href='https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700' rel='stylesheet'>
+    <script src="https://kit.fontawesome.com/573dbe14f5.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.6.1/socket.io.js" integrity="sha512-xbQU0+iHqhVt7VIXi6vBJKPh3IQBF5B84sSHdjKiSccyX/1ZI7Vnkt2/8y8uruj63/DVmCxfUNohPNruthTEQA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="container">
+                <a href="/">
+                    <button class="logo-btn">
+                        <img class="logo" src="" alt="videoChat Logo">
+                    </button>
+                </a>
+                <button class="menu" onclick="openNav()">
+                    <i class="fa-solid fa-bars"></i>
+                </button> 
+                <div id="mySidenav" class="sidenav">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                    <img class="pop-up-logo" src="" alt="videoChat Logo">
+                    <a href="/">Home</a>
+                    <a href="/about">About us</a>
+                    <a href="/contact">Contact</a>
+                    <a href="/terms">Terms & Conditions</a>
+                    <div class="support_us" >
+                        <a href="#">Support Our Team</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <br><br>
+    <main class="main_container">
+        <div class="video-tag-container">
+            <div class="videos">
+                <video class="video-player" id="user-1" autoplay="autoplay" playsinline="playsinline"></video>
+                <div class="video-overlay" id="user-2-overlay">
+                    <p class="search-text">Searching for a user...</p>
+                </div>
+                <video class="video-player" id="user-2" autoplay="autoplay" playsinline="playsinline"></video>
+            </div>
+        </div>
+        <center>
+        <div class="user-btns">
+            <!--
+            <button class="report-user">
+                Report <i class="fa-solid fa-shield-halved"></i>
+            </button>
+            -->
+            <div class="timer">
+                <i class="fa-regular fa-clock"></i>
+                <div id="timeElm"></div>
+            </div>
+            <button class="next-chat">
+                Next <i class="fa-solid fa-arrow-right-long"></i>
+            </button>
+        </div>
+        </center>
+        <div class="video_chat_container">
+            <div class="chat-container">
+                <div class="chat-text-container">
+                    <h2>Messages</h2>
+                    <p class="chat-text-area"></p>
+                </div>
+                <div class="msg-container">
+                    <div class="type-message">
+                        <input name="" id="msg-input" cols="25" rows="5" placeholder="Type your message"></input>
+                    </div>
+                    <button class="msg-send-button">
+                        <i class="fa-solid fa-paper-plane"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </main>
+    <br> <br>
+    <footer>
+        <center>
+            <a href="https://instagram.com/" class="fa-brands fa-instagram"></a>
+            <a href="https://twitter.com/" class="fa-brands fa-x-twitter"></a>
+            <p class="copyright">Copyright © 2024 <b>videoChat</b>. All Rights Reserved.</p>
+        </center>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+    <script src="/js/index.js"></script>
+</body>
+</html>

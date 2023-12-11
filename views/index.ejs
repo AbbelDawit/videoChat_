@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index</title>
+    <link rel="icon" type="image/x-icon" href="">
+    <link rel="stylesheet" href="/css/style.css">
+    <link href='https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700' rel='stylesheet'>
+    <script src="https://kit.fontawesome.com/573dbe14f5.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="container">
+                <a href="/">
+                    <button class="logo-btn">
+                        <img class="logo" src="" alt="videoChat Logo">
+                    </button>
+                </a>
+                <button class="menu" onclick="openNav()">
+                    <i class="fa-solid fa-bars"></i>
+                </button> 
+                <div id="mySidenav" class="sidenav">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                    <img class="pop-up-logo" src="" alt="videoChat Logo">
+                    <a href="/">Home</a>
+                    <a href="/about">About us</a>
+                    <a href="/contact">Contact</a>
+                    <a href="/terms">Terms & Conditions</a>
+                    <div class="support_us" >
+                        <a href="#">Support Our Team</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <!-- Age Verification Popup -->
+        <div id="ageVerificationModal" class="modal">
+            <div class="modal-content">
+                <img class="pop-up-logo" src="" alt=""videoChat>
+                <h2 style="margin-top: 0; color: black;">Age Verification Notice: 18+ Only</h2>
+                <p>
+                    Age Verification 
+                </p>
+                <!-- Your age verification content here -->
+                <br>
+                <label for="ageCheckbox">
+                    <input type="checkbox" id="ageCheckbox"> 
+                    <b>I am 18 years or older agree to </b>
+                    <a href="/terms" style="text-decoration: none;"> <b>Terms & Conditions</b></a>
+                </label>
+                <br><br>
+                <button id="verifyAgeBtn">Verify Age</button>
+                <br><br>
+            </div>
+        </div>
+        <div class="main-container">
+           <p style="text-align: center; color: gray; font-size: 18px; font-weight: 500;">
+                Start Video Chatting
+            </p>
+            <div class="action-container">
+                <div class="button-container">
+                    <center>
+                    <br>
+                    <a href="/video_chat">
+                        <button class="start-button">
+                            <i class="fa-solid fa-video" style="padding-right: 10px;"></i>Start Video Chat
+                        </button>
+                    </a>
+                    <p style="color: gray; opacity: 50%; font-weight: 900;"><b>Coming Soon</b></p>
+                    <button class="login-button">
+                        <i class="fa-solid fa-user" style="padding-right: 10px;"></i>Log in
+                    </button>
+                    <br><br>
+                    <button class="download-button" disabled>
+                        <i class="fa-brands fa-google-play" style="padding-right: 10px;"></i><i class="fa-brands fa-apple" style="padding-right: 10px;"></i>Download App
+                    </button> 
+                    </center>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <center>
+            <a href="https://instagram.com/" target=”_blank” class="fa-brands fa-instagram"></a>
+            <a href="https://twitter.com/" target=”_blank” class="fa-brands fa-x-twitter"></a>
+            <p class="copyright">Copyright © 2024 <b>videoChat</b>. All Rights Reserved.</p>
+        </center>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+    <script src="/js/main.js"></script>
+</body>
+</html>
