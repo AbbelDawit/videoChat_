@@ -633,52 +633,6 @@ $(document).on("click", ".next-chat", function () {
   clearTimerAndNext();
 });
 
-/*
-$(document).on("click", ".report-user", function () {
-  console.log("Clicked the report button"); // Add this log
-  // Notify both local and remote users about the "Report" button click
-  socket.emit("reportUser", { remoteUser: "user_id_to_report" });
-  // Call the function to clear the timer and perform necessary actions for the local user
-  clearTimerAndNext();
-});
-
-// Listen for the "reportSuccess" event from the server
-socket.on("reportSuccess", function (data) {
-  console.log("report button data: ", data);
-  console.log("report button local: ", username);
-  console.log("report button remote: ", remoteUser);
-
-  if (remoteUser && remoteUser === data.reportedUser) {
-    // Display a pop-up to the remote user with the success message
-    openCustomPopup();
-  } else {
-    console.log("report button successful for local user");
-  }
-});
-
-// Function to open the custom HTML popup
-function openCustomPopup() {
-  // Get the overlay and modal elements
-  const overlay = document.getElementById('warningOverlay');
-  const modal = document.getElementById('customPopup');
-
-  // Display the overlay and modal
-  overlay.style.display = 'flex';
-
-  // Optionally, you can add logic to start searching for another user here
-
-  // Handle the "I Understand" button click
-  document.getElementById('understandBtn').addEventListener('click', function () {
-   // Get the overlay and close the modal
-    const overlay = document.getElementById('warningOverlay');
-    overlay.style.display = 'none';
-    // Close the modal and perform additional actions if needed
-    closeConnectionAndFetchNext();
-  });
-}
-
-*/
-
 
 document.addEventListener('DOMContentLoaded', function() {
   const slides = document.querySelectorAll('.slide');
