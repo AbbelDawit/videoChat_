@@ -65,7 +65,7 @@ let init = async () => {
   // Create the peer connection
   await createPeerConnection();
   document.getElementById("user-1").srcObject = localStream;
-  $.post("https://localhost:8000/get-remote-users", { omeID: omeID })
+  $.post("https://videochat-b42a71fded75.herokuapp.com/get-remote-users", { omeID: omeID })
     .done(function (data) {
       //console.log("Remoteuser id from Init() /get-remote-users: ", data[0]._id);
       if (data[0]) {
@@ -249,7 +249,7 @@ function fetchNextUser(remoteUser, maxRetries = 5, currentRetries = 0) {
     }
 
     $.post(
-      "https://localhost:8000/get-next-user",
+      "https://videochat-b42a71fded75.herokuapp.com/get-next-user",
       { omeID: omeID, remoteUser: remoteUser },
       function (data) {
         //console.log("Next user is: ", data);
