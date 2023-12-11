@@ -634,38 +634,6 @@ $(document).on("click", ".next-chat", function () {
 });
 
 
-document.addEventListener('DOMContentLoaded', function()
-
-  shuffleArray(jokes
-
-  // Assign jokes to slides
-  for (let i = 0; i < slides.length; i++) {
-    slides[i].innerHTML `<p>${jokes[i]}</p>`;
-  }
-
-  function showSlide(index) {
-    slides.forEach((slide) => {
-      slide.style.display = 'none';
-      slide.classList.remove('fade');
-    });
-
-    slides[index].style.display = 'block';
-    slides[index].classList.add('fade');
-  }
-
-  function getNextSlide() {
-    currentSlide = (currentSlide + 1) % slides.length;
-    showSlide(currentSlide);
-  }
-
-  // Display the first slide
-  showSlide(currentSlide);
-
-  // Change slide every 10 seconds
-  setInterval(getNextSlide, 10000);
-});
-
-
 
 // Timer Script
 let timer = function (x) {
