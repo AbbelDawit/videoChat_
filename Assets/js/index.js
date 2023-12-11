@@ -219,13 +219,6 @@ function onReceiveChannelMessageCallback(event) {
 function onSendChannelStateChange() {
   const readyState = sendChannel.readyState;
   //console.log("Send channel state is: " + readyState);
-  /*
-  if (readyState === "open") {
-    console.log("Data channel ready state is open - onSendChannelStateChange");
-  } else {
-    console.log("Data channel ready state is NOT open - onSendChannelStateChange");
-  }
-  */
 }
 
 function onReceiveChannelStateChange() {
