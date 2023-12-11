@@ -224,13 +224,6 @@ function onSendChannelStateChange() {
 function onReceiveChannelStateChange() {
   const readyState = receiveChannel.readyState;
   //console.log("Receive channel state is: " + readyState);
-  /*
-  if (readyState === "open") {
-    console.log("Data channel ready state is open - onReceiveChannelStateChange");
-  } else {
-    console.log("Data channel ready state is NOT open - onReceiveChannelStateChange");
-  }
-  */
 }
 
 function fetchNextUser(remoteUser, maxRetries = 5, currentRetries = 0) {
