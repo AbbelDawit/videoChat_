@@ -288,15 +288,6 @@ let createOffer = async (remoteU) => {
   } else {
     console.error('PeerConnection is not in the expected state for creating an offer.');
   }
-  // Create and set the local offer
-  //let offer = await peerConnection.createOffer();
-  //await peerConnection.setLocalDescription(offer);
-  // Emit the offer to the remote user
-  /*socket.emit("offerSentToRemote", {
-    username: username,
-    remoteUser: remoteU,
-    offer: peerConnection.localDescription,
-  });*/
   //console.log("from Offer");
 };
 
